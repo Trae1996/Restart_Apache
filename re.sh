@@ -5,7 +5,7 @@ COMMAND="$2"
 
 if [ $# -ne 2 ]
 then
-    echo "$0 requires two paramters {virtual-host} {restart|reload}"
+    echo "ERROR: $0 requires two paramters {virtual-host} {restart|reload}"
     exit 1
 fi
 
@@ -25,4 +25,4 @@ then
 else
     echo "ERROR: $COMMAND is an invalid service command {restart|reload}"
     exit 1
-fiS
+fi
